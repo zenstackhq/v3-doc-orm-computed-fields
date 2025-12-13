@@ -1,4 +1,4 @@
-import { ClientContract } from "@zenstackhq/runtime";
+import { ClientContract } from "@zenstackhq/orm";
 import { SchemaType } from "./zenstack/schema";
 
 export function createPosts(db: ClientContract<SchemaType>) {
