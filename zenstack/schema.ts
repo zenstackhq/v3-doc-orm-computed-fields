@@ -44,13 +44,6 @@ export class SchemaType implements SchemaDef {
             uniqueFields: {
                 id: { type: "Int" },
                 email: { type: "String" }
-            },
-            computedFields: {
-                postCount(_context: {
-                    modelAlias: string;
-                }): number {
-                    throw new Error("This is a stub for computed field");
-                }
             }
         },
         Post: {
