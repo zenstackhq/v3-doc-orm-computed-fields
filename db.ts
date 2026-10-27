@@ -12,7 +12,7 @@ export async function createClient() {
   const db = new ZenStackClient(schema, {
     dialect: new SqlJsDialect({ sqlJs: new SQL.Database() }),
     computedFields: {
-      User: {
+      user: {
         // equivalent SQL:
         // `(SELECT COUNT(*) AS "count" FROM "Post" WHERE "Post"."authorId" = "User"."id")
         postCount: (eb, { modelAlias }) =>
